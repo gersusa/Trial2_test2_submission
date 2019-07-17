@@ -20,5 +20,5 @@ if ~isempty(pfs)
         pfs(i) = fixGen2Normal(gen2shunts(int2ext(pfs(i))));
     end
 end
-create_solution2(pfs,contingencies,1)
+create_solution2(pfs,contingencies,mpcOPF);
 end
